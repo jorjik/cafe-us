@@ -1,0 +1,122 @@
+{
+  "colorMode": "LIGHT",
+  "font": "LITERATA",
+  "roundness": "ROUND_EIGHT",
+  "customColor": "#4b3621",
+  "headlineFont": "LITERATA",
+  "bodyFont": "BE_VIETNAM_PRO",
+  "labelFont": "BE_VIETNAM_PRO",
+  "namedColors": {
+    "background": "#fbfbe2",
+    "error": "#ba1a1a",
+    "error_container": "#ffdad6",
+    "inverse_on_surface": "#f2f2d9",
+    "inverse_primary": "#e1c1a4",
+    "inverse_surface": "#303221",
+    "on_background": "#1b1d0e",
+    "on_error": "#ffffff",
+    "on_error_container": "#93000a",
+    "on_primary": "#ffffff",
+    "on_primary_container": "#bd9f83",
+    "on_primary_fixed": "#291806",
+    "on_primary_fixed_variant": "#59422c",
+    "on_secondary": "#ffffff",
+    "on_secondary_container": "#5a682f",
+    "on_secondary_fixed": "#161f00",
+    "on_secondary_fixed_variant": "#3e4c16",
+    "on_surface": "#1b1d0e",
+    "on_surface_variant": "#4e453d",
+    "on_tertiary": "#ffffff",
+    "on_tertiary_container": "#d39a25",
+    "on_tertiary_fixed": "#271900",
+    "on_tertiary_fixed_variant": "#5f4100",
+    "outline": "#80756c",
+    "outline_variant": "#d2c4ba",
+    "primary": "#33210d",
+    "primary_container": "#4b3621",
+    "primary_fixed": "#fedcbe",
+    "primary_fixed_dim": "#e1c1a4",
+    "secondary": "#56642b",
+    "secondary_container": "#d6e7a1",
+    "secondary_fixed": "#d9eaa3",
+    "secondary_fixed_dim": "#bdce89",
+    "surface": "#fbfbe2",
+    "surface_bright": "#fbfbe2",
+    "surface_container": "#efefd7",
+    "surface_container_high": "#eaead1",
+    "surface_container_highest": "#e4e4cc",
+    "surface_container_low": "#f5f5dc",
+    "surface_container_lowest": "#ffffff",
+    "surface_dim": "#dbdcc3",
+    "surface_tint": "#725a42",
+    "surface_variant": "#e4e4cc",
+    "tertiary": "#332100",
+    "tertiary_container": "#4f3500",
+    "tertiary_fixed": "#ffdeab",
+    "tertiary_fixed_dim": "#fabc46"
+  },
+  "designMd": "---\nname: Hearth & Harvest\ncolors:\n  surface: '#fbfbe2'\n  surface-dim: '#dbdcc3'\n  surface-bright: '#fbfbe2'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f5dc'\n  surface-container: '#efefd7'\n  surface-container-high: '#eaead1'\n  surface-container-highest: '#e4e4cc'\n  on-surface: '#1b1d0e'\n  on-surface-variant: '#4e453d'\n  inverse-surface: '#303221'\n  inverse-on-surface: '#f2f2d9'\n  outline: '#80756c'\n  outline-variant: '#d2c4ba'\n  surface-tint: '#725a42'\n  primary: '#33210d'\n  on-primary: '#ffffff'\n  primary-container: '#4b3621'\n  on-primary-container: '#bd9f83'\n  inverse-primary: '#e1c1a4'\n  secondary: '#56642b'\n  on-secondary: '#ffffff'\n  secondary-container: '#d6e7a1'\n  on-secondary-container: '#5a682f'\n  tertiary: '#332100'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#4f3500'\n  on-tertiary-container: '#d39a25'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#fedcbe'\n  primary-fixed-dim: '#e1c1a4'\n  on-primary-fixed: '#291806'\n  on-primary-fixed-variant: '#59422c'\n  secondary-fixed: '#d9eaa3'\n  secondary-fixed-dim: '#bdce89'\n  on-secondary-fixed: '#161f00'\n  on-secondary-fixed-variant: '#3e4c16'\n  tertiary-fixed: '#ffdeab'\n  tertiary-fixed-dim: '#fabc46'\n  on-tertiary-fixed: '#271900'\n  on-tertiary-fixed-variant: '#5f4100'\n  background: '#fbfbe2'\n  on-background: '#1b1d0e'\n  surface-variant: '#e4e4cc'\ntypography:\n  display-lg:\n    fontFamily: Literata\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Literata\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: 44px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Literata\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n  headline-sm:\n    fontFamily: Literata\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  unit: 8px\n  container-max: 1200px\n  gutter: 24px\n  margin-mobile: 16px\n  margin-desktop: 40px\n---\n\n## Brand & Style\nThe design system is built to evoke the atmosphere of a local sanctuary—a place of warmth, organic growth, and community connection. The brand personality is grounded and welcoming, leaning into a **Modern Tactile** aesthetic. \n\nThe visual language balances the reliability of a long-standing local institution with the freshness of artisanal craft. It utilizes soft textures, generous whitespace to prevent digital clutter, and a deliberate \"human\" touch in its presentation to mirror the physical experience of a cozy cafe in Cadillac.\n\n## Colors\nThe palette is rooted in the natural world. \n- **Primary (Deep Coffee):** Used for primary actions, main text, and structural elements to provide grounding and authority.\n- **Secondary (Sage Green):** Applied to secondary interactions and decorative motifs to evoke a sense of calm and freshness.\n- **Background (Cream):** A soft, eye-straining-free alternative to pure white, providing a paper-like quality to the UI.\n- **Accents (Caramel & Leaf):** Used sparingly for highlights, success states, or seasonal promotions to add warmth and organic vibrancy.\n\n## Typography\nThe typographic strategy pairs the literary, slightly rustic charm of **Literata** with the clean, friendly modernism of **Be Vietnam Pro**. \n\n- **Headlines:** Use Literata for all headings. It provides a \"hand-crafted\" editorial feel that distinguishes the cafe from fast-food chains.\n- **Body & UI:** Use Be Vietnam Pro for menus, descriptions, and functional labels. It ensures high legibility on mobile devices while maintaining a soft, approachable character.\n- **Hierarchy:** Maintain high contrast between heading sizes and body text to guide the user's eye through the menu and story sections.\n\n## Layout & Spacing\nThe layout follows a **Fluid-Fixed hybrid model**. Content is contained within a 1200px max-width container on desktop, centered with generous outer margins to emphasize the \"cozy\" and \"focused\" brand nature.\n\n- **Grid:** A 12-column grid for desktop and a 4-column grid for mobile.\n- **Rhythm:** Use multiples of 8px for all padding and margins. \n- **Spaciousness:** Avoid dense information clusters. Every element should have \"room to breathe,\" reflecting the relaxed pace of a local cafe.\n\n## Elevation & Depth\nDepth in this design system is achieved through **Tonal Layering** and **Ambient Shadows**. \n\n- **Surface Levels:** The base layer is the Cream (#F5F5DC). Floating cards and menus use a slightly lighter, pure-white surface to lift them off the page.\n- **Shadows:** Use extremely soft, diffused shadows with a slight warm tint (e.g., `rgba(75, 54, 33, 0.08)`). Avoid harsh, black shadows.\n- **Interactive Depth:** Buttons should feel \"pressed\" when active using a subtle inner shadow or a slight vertical translation (1-2px) rather than a heavy color shift.\n\n## Shapes\nThe shape language is consistently **Rounded**. There are no sharp corners in this design system, as they feel too corporate or aggressive for a cozy brand.\n\n- **Standard Elements:** Buttons, input fields, and small cards use a 0.5rem (8px) radius.\n- **Container Elements:** Large sections and featured images use the `rounded-xl` setting (1.5rem / 24px) to create a soft, framing effect.\n- **Icons:** Use icons with rounded terminals and medium stroke weights to match the typography.\n\n## Components\n- **Buttons:** Primary buttons are solid Deep Coffee with Cream text. Secondary buttons are Sage Green outlines with Sage text. All buttons have high padding (12px 24px) to feel substantial and \"touchable.\"\n- **Cards:** Used for menu items. Cards feature a subtle 1px border in a darker cream shade and the standard ambient shadow. Images within cards should always have the top corners rounded.\n- **Chips:** Used for dietary labels (e.g., \"Vegan,\" \"Gluten-Free\"). These use a soft leaf green background with a low opacity to remain informative without being distracting.\n- **Input Fields:** Soft cream backgrounds with a 1px Sage Green border when focused. Label text sits above the field in Literata (small) for a premium feel.\n- **Lists:** Menu lists should use generous vertical spacing (16px between items) with a thin, dotted separator to evoke vintage cafe menu boards.\n- **Special Component (The \"Special Board\"):** A featured card component with a Caramel border and Literata Display text, used to highlight daily specials or Cadillac-specific events.",
+  "colorVariant": "FIDELITY",
+  "overridePrimaryColor": "#4b3621",
+  "overrideSecondaryColor": "#8a9a5b",
+  "overrideTertiaryColor": "#c68e17",
+  "overrideNeutralColor": "#f5f5dc",
+  "spacingScale": 2,
+  "typography": {
+    "body-lg": {
+      "fontFamily": "Be Vietnam Pro",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px"
+    },
+    "body-md": {
+      "fontFamily": "Be Vietnam Pro",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px"
+    },
+    "display-lg": {
+      "fontFamily": "Literata",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "56px",
+      "letterSpacing": "-0.02em"
+    },
+    "display-lg-mobile": {
+      "fontFamily": "Literata",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "lineHeight": "44px",
+      "letterSpacing": "-0.02em"
+    },
+    "headline-md": {
+      "fontFamily": "Literata",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "40px"
+    },
+    "headline-sm": {
+      "fontFamily": "Literata",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "32px"
+    },
+    "label-md": {
+      "fontFamily": "Be Vietnam Pro",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "letterSpacing": "0.05em"
+    }
+  },
+  "spacing": {
+    "container-max": "1200px",
+    "gutter": "24px",
+    "margin-desktop": "40px",
+    "margin-mobile": "16px",
+    "unit": "8px"
+  },
+  "headlineFontFamily": "Literata",
+  "bodyFontFamily": "Be Vietnam Pro",
+  "labelFontFamily": "Be Vietnam Pro"
+}

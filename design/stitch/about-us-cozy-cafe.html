@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Cozy Cafe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Literata:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eaead1",
+                        "on-tertiary-container": "#d39a25",
+                        "secondary-fixed": "#d9eaa3",
+                        "secondary": "#56642b",
+                        "on-secondary-container": "#5a682f",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#d6e7a1",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-bright": "#fbfbe2",
+                        "primary": "#33210d",
+                        "primary-fixed": "#fedcbe",
+                        "primary-container": "#4b3621",
+                        "surface-dim": "#dbdcc3",
+                        "tertiary-fixed-dim": "#fabc46",
+                        "primary-fixed-dim": "#e1c1a4",
+                        "tertiary": "#332100",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#59422c",
+                        "inverse-primary": "#e1c1a4",
+                        "surface-container-highest": "#e4e4cc",
+                        "background": "#fbfbe2",
+                        "outline": "#80756c",
+                        "outline-variant": "#d2c4ba",
+                        "secondary-fixed-dim": "#bdce89",
+                        "tertiary-fixed": "#ffdeab",
+                        "on-surface": "#1b1d0e",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#161f00",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f2f2d9",
+                        "on-secondary-fixed-variant": "#3e4c16",
+                        "surface-container": "#efefd7",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#291806",
+                        "inverse-surface": "#303221",
+                        "surface-container-low": "#f5f5dc",
+                        "surface-tint": "#725a42",
+                        "on-surface-variant": "#4e453d",
+                        "surface-variant": "#e4e4cc",
+                        "surface": "#fbfbe2",
+                        "on-tertiary-fixed-variant": "#5f4100",
+                        "on-primary-container": "#bd9f83",
+                        "tertiary-container": "#4f3500",
+                        "on-background": "#1b1d0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Literata"],
+                        "headline-md": ["Literata"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Literata"],
+                        "headline-sm": ["Literata"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fbfbe2; /* surface */
+            color: #1b1d0e; /* on-surface */
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(75, 54, 33, 0.08);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky shadow-sm bg-surface z-50">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary" href="#">
+                Cozy Cafe
+            </a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 translate-y-px transition-all" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Menu</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors shadow-sm">
+                    Order Now
+                </button>
+<!-- Mobile Menu Toggle (Decorative) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-start w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-24">
+<!-- Hero Section: The Story -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+<div class="space-y-6 order-2 md:order-1">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary text-shadow-sm">
+                    Our Story
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Born from a desire to create a true local sanctuary in Cadillac, Cozy Cafe is more than just a place to get coffee. We are a dedicated space for students cramming for finals, professionals taking a mindful break, and families gathering for a weekend treat. 
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    We believe in the power of a warm atmosphere and genuinely great food to bring people together. Every cup we pour and every plate we serve is crafted with intention, reflecting our commitment to our community and the simple joy of a shared meal.
+                </p>
+</div>
+<div class="order-1 md:order-2 w-full aspect-square md:aspect-[4/5] rounded-xl overflow-hidden shadow-sm relative group">
+<img alt="Cozy Cafe Interior" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A warm, inviting interior shot of a local cafe. The lighting is soft and golden, highlighting plush, comfortable seating arrangements with natural wood accents. Soft focus in the background shows a barista working thoughtfully. The overall aesthetic is rustic yet modern, emphasizing a 'Modern Tactile' feel with deep browns, soft greens, and cream colors. High quality, photorealistic, natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzMq9cbTQgzpilMM-79A0f5RdExTh9TPatKWHvOxdkxRl2P2ddK39z6SuBb09e1glIUNeIJfa9Gl5Mw53QLFxHL7a9b0gUfLvbb4X3uTAZwDGnKiDUfpuBbrxs37J18MeATXJEKiDjxgiOWNas6TJrddIAz9_YuxB617KRwJpN11RNATfeDb5I5D5S1OQbaH0eKDZjefe5Ldn8Cs9bP7IyQHj3mJYIZmqp1nMyxLy_PAhbIYFrJ1v_kA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+</section>
+<!-- Values Section: Bento Grid Approach -->
+<section class="w-full space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary">What We Stand For</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The pillars that make Cozy Cafe a staple in our community.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Value Card 1 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quality Ingredients</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        We source locally whenever possible, ensuring every dish and drink is fresh, flavorful, and responsibly made.
+                    </p>
+</div>
+<!-- Value Card 2 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">diversity_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Community Focus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        This is your space. We host local events, feature community artists, and strive to be a hub for connection.
+                    </p>
+</div>
+<!-- Value Card 3 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Welcoming Environment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Whether you're here for five minutes or five hours, our doors are open and our seating is intentionally comfortable.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Ambiance Section -->
+<section class="w-full bg-surface-container-low rounded-2xl p-8 md:p-16 shadow-sm border border-surface-variant relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 bg-secondary-container rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="font-headline-md text-headline-md text-primary">The Perfect Vibe</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        We designed our space to adapt to your needs. Need to grind out some work? We've got fast, reliable WiFi. Looking to relax? Sink into our plush, comfy seating. All under warm, flattering lighting that feels like a hug.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="flex items-center space-x-2 bg-surface-container px-4 py-2 rounded-full shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">wifi</span>
+<span class="font-label-md text-label-md text-primary">Fast WiFi</span>
+</div>
+<div class="flex items-center space-x-2 bg-surface-container px-4 py-2 rounded-full shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">chair</span>
+<span class="font-label-md text-label-md text-primary">Comfy Seating</span>
+</div>
+<div class="flex items-center space-x-2 bg-surface-container px-4 py-2 rounded-full shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">lightbulb</span>
+<span class="font-label-md text-label-md text-primary">Good Lighting</span>
+</div>
+</div>
+</div>
+<!-- Special Board component styling for a featured quote -->
+<div class="w-full md:w-5/12 bg-surface-container-lowest border-2 border-[#d39a25] rounded-lg p-8 shadow-md rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="border border-[#d39a25]/30 p-6 h-full flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-4">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-primary italic mb-4">"The best spot in town to get some work done or just hide away with a good book and a great latte."</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">- A Local Regular</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-highest border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Brand & Copyright -->
+<div class="flex flex-col space-y-4">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary">Cozy Cafe</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Cozy Cafe. All rights reserved.</p>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col space-y-2 font-body-md text-body-md text-on-surface-variant">
+<p>8834 E 34 Rd #131, Cadillac, MI 49601</p>
+<p>(231) 555-0123</p>
+<p>hello@cozycafe.com</p>
+</div>
+<!-- Social Links -->
+<div class="flex flex-col space-y-2 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors inline-flex items-center space-x-2" href="#">
+<span>Instagram</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors inline-flex items-center space-x-2" href="#">
+<span>Facebook</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

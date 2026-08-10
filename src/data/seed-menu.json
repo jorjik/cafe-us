@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "address": "8834 E 34 Rd #131, Cadillac, MI 49601",
+    "phone": "(231) 555-0123",
+    "email": "hello@cozycafe.com",
+    "hours": "Mon-Sun, 7am - 7pm",
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "order_url": "/menu.html"
+  },
+  "categories": [
+    { "name": "Breakfast", "slug": "breakfast", "sort": 1 },
+    { "name": "Lunch", "slug": "lunch", "sort": 2 },
+    { "name": "Snacks", "slug": "snacks", "sort": 3 },
+    { "name": "Drinks & Desserts", "slug": "drinks", "sort": 4 }
+  ],
+  "items": [
+    { "name": "Butter Croissant", "price": 200, "category": "breakfast", "tags": [], "sort": 1, "featured": false },
+    { "name": "Chocolate Croissant", "price": 500, "category": "breakfast", "tags": [], "sort": 2, "featured": false },
+    { "name": "Cinnamon Roll", "price": 300, "category": "breakfast", "tags": [], "sort": 3, "featured": false },
+    { "name": "Banana Bread Slice", "price": 1000, "category": "breakfast", "tags": ["Vegan"], "sort": 4, "featured": false },
+    { "name": "Blueberry Muffin", "price": 1200, "category": "breakfast", "tags": [], "sort": 5, "featured": false },
+    { "name": "Cheese Danish", "price": 1400, "category": "breakfast", "tags": [], "sort": 6, "featured": false },
+    { "name": "Toast & Jam", "price": 900, "category": "breakfast", "tags": [], "sort": 7, "featured": false },
+    { "name": "Pancake Stack", "price": 800, "category": "breakfast", "tags": [], "sort": 8, "featured": false },
+    {
+      "name": "Coffee & Croissant Pair",
+      "price": 600,
+      "category": "breakfast",
+      "tags": [],
+      "sort": 9,
+      "featured": true,
+      "description": "Our signature house roast paired perfectly with a fresh baked butter croissant. The ultimate way to start your day in Cadillac."
+    },
+    { "name": "Club Sandwich", "price": 500, "category": "lunch", "tags": [], "sort": 1, "featured": false },
+    { "name": "Chicken Sandwich", "price": 200, "category": "lunch", "tags": [], "sort": 2, "featured": false },
+    { "name": "Veggie Sandwich", "price": 100, "category": "lunch", "tags": ["Vegetarian"], "sort": 3, "featured": false },
+    { "name": "Beef Burger", "price": 500, "category": "lunch", "tags": [], "sort": 4, "featured": false },
+    { "name": "Chicken Burger", "price": 800, "category": "lunch", "tags": [], "sort": 5, "featured": false },
+    { "name": "French Fries", "price": 500, "category": "snacks", "tags": [], "sort": 1, "featured": false },
+    { "name": "Meat Pie", "price": 800, "category": "snacks", "tags": [], "sort": 2, "featured": false },
+    { "name": "Sausage Roll", "price": 700, "category": "snacks", "tags": [], "sort": 3, "featured": false },
+    { "name": "Spring Rolls", "price": 200, "category": "snacks", "tags": [], "sort": 4, "featured": false },
+    { "name": "Seasonal Fruit Cup", "price": 400, "category": "snacks", "tags": ["Vegan"], "sort": 5, "featured": false },
+    { "name": "House Trail Mix", "price": 350, "category": "snacks", "tags": [], "sort": 6, "featured": false },
+    { "name": "Artisanal Coffee", "price": 350, "category": "drinks", "tags": [], "sort": 1, "featured": false },
+    { "name": "Latte", "price": 450, "category": "drinks", "tags": [], "sort": 2, "featured": false },
+    { "name": "Chocolate Chip Cookie", "price": 250, "category": "drinks", "tags": [], "sort": 3, "featured": false }
+  ]
+}

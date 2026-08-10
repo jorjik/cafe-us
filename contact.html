@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Cozy Cafe</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="description" content="Get in touch with Cozy Cafe in Cadillac, MI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Literata:opsz,wght@7..72,400..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header id="site-header" class="w-full sticky top-0 shadow-sm bg-surface z-50"></header>
+
+    <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+      <div class="text-center mb-12 md:mb-16">
+        <h1 class="font-display text-display-mobile md:text-display-lg text-primary mb-4">Get in Touch</h1>
+        <p class="font-body text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+          We'd love to hear from you. Whether you have a question about our artisanal menu, want to book a private event, or just want to say hello.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+        <div class="bg-surface-container-lowest rounded-2xl ambient-shadow p-8 md:p-12 border border-outline-variant">
+          <h2 class="font-display text-headline-md text-primary mb-8">Send a Message</h2>
+          <form id="contact-form" class="space-y-6" novalidate>
+            <div>
+              <label class="block font-display text-sm text-primary mb-2" for="name">Name</label>
+              <input
+                class="w-full bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded px-4 py-3 font-body text-body-md text-on-surface transition-colors outline-none"
+                id="name"
+                name="name"
+                placeholder="Jane Doe"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div>
+              <label class="block font-display text-sm text-primary mb-2" for="email">Email</label>
+              <input
+                class="w-full bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded px-4 py-3 font-body text-body-md text-on-surface transition-colors outline-none"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div>
+              <label class="block font-display text-sm text-primary mb-2" for="message">Message</label>
+              <textarea
+                class="w-full bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded px-4 py-3 font-body text-body-md text-on-surface transition-colors resize-none outline-none"
+                id="message"
+                name="message"
+                placeholder="How can we help you today?"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button class="w-full bg-primary-container text-on-primary font-body text-label-md tracking-wide font-semibold px-6 py-4 rounded hover:opacity-90 transition-opacity mt-4" type="submit">
+              Send Message
+            </button>
+            <p id="contact-status" class="mt-4 text-sm" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="space-y-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant flex flex-col items-center text-center">
+              <span class="material-symbols-outlined text-secondary mb-3 text-3xl" style="font-variation-settings: 'FILL' 1">location_on</span>
+              <h3 class="font-display text-headline-sm text-primary mb-2">Visit Us</h3>
+              <p class="font-body text-body-md text-on-surface-variant" data-contact-address>8834 E 34 Rd #131<br />Cadillac, MI 49601</p>
+            </div>
+            <div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant flex flex-col items-center text-center">
+              <span class="material-symbols-outlined text-secondary mb-3 text-3xl" style="font-variation-settings: 'FILL' 1">call</span>
+              <h3 class="font-display text-headline-sm text-primary mb-2">Call Us</h3>
+              <p class="font-body text-body-md text-on-surface-variant" data-contact-phone>(231) 555-0123</p>
+              <p class="font-body text-body-md text-outline mt-2 text-sm" data-contact-hours>Mon-Sun, 7am - 7pm</p>
+            </div>
+            <div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant flex flex-col items-center text-center sm:col-span-2">
+              <span class="material-symbols-outlined text-secondary mb-3 text-3xl" style="font-variation-settings: 'FILL' 1">mail</span>
+              <h3 class="font-display text-headline-sm text-primary mb-2">Email</h3>
+              <p class="font-body text-body-md text-on-surface-variant" data-contact-email>hello@cozycafe.com</p>
+            </div>
+          </div>
+
+          <div class="w-full h-64 rounded-2xl overflow-hidden border border-outline-variant ambient-shadow relative">
+            <img
+              class="w-full h-full object-cover absolute inset-0"
+              alt="Illustrated map of Cadillac, Michigan highlighting Cozy Cafe"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgz4AK6Zj_1vlQqSNu3mrj-CkD-f8-lUdSUrrcHbDKxj9etLSe8VCP8NIBNGN2txOcx3GtfgfdvMNlepGMzUvjsco1FsectiPhLsgj6ugSktSJlccBk5WezQsD3i6Pa4T62MnkXzK9yyqw2EJGkbImPNUqXfh5VN2cLJykldOtR-YSHWSgiwEV0YGF_koBxHEEnersmO4HinLsZ3fno5fYoZQf1HelKpIhvUvexQ4cIwXoljDM9PX8uA"
+            />
+            <div class="absolute inset-0 bg-primary-container/10 pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="site-footer" class="w-full mt-auto border-t border-outline-variant bg-surface-container-highest"></footer>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cozy Cafe - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&amp;family=Be+Vietnam+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#eaead1",
+                      "on-tertiary-container": "#d39a25",
+                      "secondary-fixed": "#d9eaa3",
+                      "secondary": "#56642b",
+                      "on-secondary-container": "#5a682f",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#d6e7a1",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed": "#271900",
+                      "surface-bright": "#fbfbe2",
+                      "primary": "#33210d",
+                      "primary-fixed": "#fedcbe",
+                      "primary-container": "#4b3621",
+                      "surface-dim": "#dbdcc3",
+                      "tertiary-fixed-dim": "#fabc46",
+                      "primary-fixed-dim": "#e1c1a4",
+                      "tertiary": "#332100",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#59422c",
+                      "inverse-primary": "#e1c1a4",
+                      "surface-container-highest": "#e4e4cc",
+                      "background": "#fbfbe2",
+                      "outline": "#80756c",
+                      "outline-variant": "#d2c4ba",
+                      "secondary-fixed-dim": "#bdce89",
+                      "tertiary-fixed": "#ffdeab",
+                      "on-surface": "#1b1d0e",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#161f00",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f2f2d9",
+                      "on-secondary-fixed-variant": "#3e4c16",
+                      "surface-container": "#efefd7",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#291806",
+                      "inverse-surface": "#303221",
+                      "surface-container-low": "#f5f5dc",
+                      "surface-tint": "#725a42",
+                      "on-surface-variant": "#4e453d",
+                      "surface-variant": "#e4e4cc",
+                      "surface": "#fbfbe2",
+                      "on-tertiary-fixed-variant": "#5f4100",
+                      "on-primary-container": "#bd9f83",
+                      "tertiary-container": "#4f3500",
+                      "on-background": "#1b1d0e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "margin-desktop": "40px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Literata"
+                      ],
+                      "headline-md": [
+                              "Literata"
+                      ],
+                      "label-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "display-lg-mobile": [
+                              "Literata"
+                      ],
+                      "headline-sm": [
+                              "Literata"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky shadow-sm bg-surface dark:bg-surface-dim z-50">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary-fixed" href="#">Cozy Cafe</a>
+<nav class="hidden md:flex space-x-8">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors hidden md:block">
+                Order Now
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<img class="w-full h-full object-cover" data-alt="A warm, inviting cafe interior photographed in high resolution. The space features natural wood tables, soft glowing pendant lights casting a warm hue, and large windows letting in natural daylight. The aesthetic is modern tactile with a palette of soft cream walls and deep coffee wood tones, creating a cozy and relaxing atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1vzREXD4MfDleK1Bc07LnsJAM1ocjHUAOSxjXSxVghifIt-KJviLT-PXKwKgAZkuWUgVXtusv6e8PHuDJRS_MwFIpMcp0nVwC7dvBe9-uZl_n8FrtUQqIjlb0Jw2eY7DreZc4DIcv9D2i8_t0TNajhRJxfGuD87XePWhkGcVmEHOja5CP18MorPIgzFIrfbJMRYaxCLXiP94X4lDhqA6FwNO8zeYqdC2gKaDf4aX5O-1MwnyRtdf8cg"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-3xl mx-auto flex flex-col items-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6 drop-shadow-md">Your Home Away from Home</h1>
+<p class="font-body-lg text-body-lg text-on-primary mb-10 max-w-2xl drop-shadow-md">A cozy spot for coffee, food, and chill vibes in the heart of Cadillac, MI.</p>
+<div class="flex gap-4">
+<button class="bg-surface text-primary px-8 py-4 rounded-lg font-label-md text-label-md shadow-[0_4px_14px_rgba(75,54,33,0.15)] hover:-translate-y-1 transition-transform">
+                        View Menu
+                    </button>
+<button class="border-2 border-surface text-surface px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface/10 transition-colors backdrop-blur-sm">
+                        Find Us
+                    </button>
+</div>
+</div>
+</section>
+<!-- Popular Items Section (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Local Favorites</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Crafted with care, enjoyed daily by our community.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[300px]">
+<!-- Feature 1: Coffee -->
+<div class="md:col-span-8 relative rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(75,54,33,0.08)] group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully crafted latte in a ceramic mug resting on a rustic wooden table. Delicate latte art sits atop the foam. The lighting is soft and natural, emphasizing the rich, deep tones of the coffee against the warm, inviting background of the cafe. Modern tactile aesthetic with a focus on artisanal quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_87J5078icF_FILWv4hsuyg7OXlg9pKtnCT9VYICfo-Y1-HTnwR7l_JSYGhpWzn3wknEN_YsNw-ujqn1zDK7vibHh1QGeni4P5tzGRstDIsso4XCY3_cFSbkITuvE60cGHy4mGDnVzIjj0Z5LIRKzdOKGMbmckyWk0oN7DPbJjenWUHF3JqqBVi3M1wuFUNeYN646k0lFVUAgjubw_vIdWfTC1gMwv9PIQYFRVu2F1lsjVMov_0sPfg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block bg-secondary/80 text-on-secondary px-3 py-1 rounded-full font-label-md text-label-md mb-3 backdrop-blur-md">House Specialty</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Artisanal Coffee</h3>
+<p class="text-on-primary/80 line-clamp-2">Sourced locally, roasted to perfection. A refreshing start to any Cadillac morning.</p>
+</div>
+</div>
+<!-- Feature 2: Croissant -->
+<div class="md:col-span-4 relative rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(75,54,33,0.08)] group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A flaky, golden-brown butter croissant served on a simple, elegant cream-colored plate. The pastry is lit to highlight its delicate layers and rich buttery texture. The setting feels calm and inviting, characteristic of a high-end local bakery. Warm, natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVIM5WtIULZAVIUmZ6HhNmOkz5T7wsf9-wbL_OSsYrqV2nnGi7QIqsU8SxIY_7jwayozfi3eOa4OrnOVSG5qAQA88R_Cw6hQ9CyUchCl9taEQKym2GMWWlQyqCZxYPWZ6GFPWJIb7vo5YgxI5ed4IP0JtQ8e-Addb4f4KZ1fNtXV3iE-KqxbUcYO7AJsmEXMm8Ae1DHeFC93bvwRv7EaHmvSKfoVh0DcFJS4w6w05_F5splvt8roM4Yw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Butter Croissant</h3>
+<p class="text-on-primary/80 text-sm">Baked fresh daily.</p>
+</div>
+</div>
+<!-- Feature 3: Sandwich -->
+<div class="md:col-span-12 relative rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(75,54,33,0.08)] bg-surface-container-low flex flex-col md:flex-row border border-surface-variant">
+<div class="w-full md:w-1/2 h-64 md:h-full relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A gourmet club sandwich stacked high with fresh ingredients, sliced neatly in half on a wooden serving board. Visible layers of turkey, crisp bacon, fresh lettuce, and ripe tomatoes. The bright, fresh greens pop against the warm tones of the toasted bread. Photographed in natural, airy cafe lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCln_z1rNFLZCi4D4y2AiYNAIoHDtmKplTs1PVNgGkUPl6WJEit0aeos0aEyHb8dxrJduBBnri84sPEhOmepfuy8rqHA0diy6VpNWLO_R_1383Q7mmq7NQe91f2Q2ubLBczUfmEQL-zN3K_tHupdHKTmf6PQDvAG-t750wxc7wB2Me4qJ3gRWk3-mQY--ia9cO1A4hY-w7G0xwY7AJ5MjC2pqEGtDyiZp_x5UqVZ9pqudTkaFOkBsWpqw"/>
+</div>
+<div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<span class="inline-block self-start border border-secondary text-secondary px-3 py-1 rounded-full font-label-md text-label-md mb-4">Lunch Essential</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">The Classic Club</h3>
+<p class="text-on-surface-variant mb-6">Stacked high with premium cuts, fresh local greens, and our house-made aioli on artisanal sourdough. The perfect midday refuel.</p>
+<button class="self-start text-primary font-label-md text-label-md flex items-center gap-2 hover:gap-3 transition-all">
+                            Order for Pickup
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Ambient Atmospheric Section -->
+<section class="w-full bg-surface-container-high py-24 relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-fixed rounded-full blur-[80px] opacity-40"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-secondary-fixed rounded-full blur-[100px] opacity-30"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+<span class="material-symbols-outlined text-6xl text-primary mb-6" style="font-variation-settings: 'wght' 200;">local_cafe</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-6 max-w-2xl mx-auto leading-relaxed">"The perfect blend of community and craft, right here in Cadillac."</h2>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Join us today</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto border-t border-outline-variant dark:border-outline bg-surface-container-highest dark:bg-surface-container-high">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-display-lg-mobile text-primary dark:text-primary-fixed">Cozy Cafe</span>
+<p class="text-on-surface-variant dark:text-on-surface-variant">© 2024 Cozy Cafe. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-on-surface-variant dark:text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                    8834 E 34 Rd #131, Cadillac, MI 49601
+                </p>
+<p class="text-on-surface-variant dark:text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">phone</span>
+                    (231) 555-0123
+                </p>
+<p class="text-on-surface-variant dark:text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span>
+                    hello@cozycafe.com
+                </p>
+</div>
+<div class="flex flex-col gap-3 md:items-end">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Instagram</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Facebook</a>
+</div>
+</div>
+</footer>
+</body></html>

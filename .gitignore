@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.local
+mcp.json
+pocketbase/pb_data
+pocketbase/pocketbase.exe
+pocketbase/pocketbase
+pocketbase/CHANGELOG.md
+pocketbase/LICENSE.md
+.DS_Store
+*.log
