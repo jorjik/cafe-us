@@ -22,8 +22,8 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-        <div class="bg-surface-container-lowest rounded-2xl ambient-shadow p-8 md:p-12 border border-outline-variant">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch">
+        <div class="bg-surface-container-lowest rounded-2xl ambient-shadow p-8 md:p-12 border border-outline-variant h-full">
           <h2 class="font-display text-headline-md text-primary mb-8">Send a Message</h2>
           <form id="contact-form" class="space-y-6" novalidate>
             <div>
@@ -68,8 +68,8 @@
           </form>
         </div>
 
-        <div class="space-y-12">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="flex h-full flex-col gap-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 shrink-0">
             <div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant flex flex-col items-center text-center">
               <span class="material-symbols-outlined text-secondary mb-3 text-3xl" style="font-variation-settings: 'FILL' 1">location_on</span>
               <h3 class="font-display text-headline-sm text-primary mb-2">Visit Us</h3>
@@ -88,13 +88,15 @@
             </div>
           </div>
 
-          <div class="w-full h-64 rounded-2xl overflow-hidden border border-outline-variant ambient-shadow relative">
-            <img
-              class="w-full h-full object-cover absolute inset-0"
-              alt="Illustrated map of Cadillac, Michigan highlighting Cozy Cafe"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgz4AK6Zj_1vlQqSNu3mrj-CkD-f8-lUdSUrrcHbDKxj9etLSe8VCP8NIBNGN2txOcx3GtfgfdvMNlepGMzUvjsco1FsectiPhLsgj6ugSktSJlccBk5WezQsD3i6Pa4T62MnkXzK9yyqw2EJGkbImPNUqXfh5VN2cLJykldOtR-YSHWSgiwEV0YGF_koBxHEEnersmO4HinLsZ3fno5fYoZQf1HelKpIhvUvexQ4cIwXoljDM9PX8uA"
-            />
-            <div class="absolute inset-0 bg-primary-container/10 pointer-events-none"></div>
+          <div class="relative w-full min-h-64 flex-1 overflow-hidden rounded-lg border border-outline-variant ambient-shadow">
+            <iframe
+              class="absolute inset-0 h-full w-full border-0 grayscale contrast-110 brightness-95"
+              title="Cozy Cafe location on Google Maps — 8834 E 34 Rd #131, Cadillac, MI 49601"
+              src="https://maps.google.com/maps?q=8834%20E%2034%20Rd%20%23131%2C%20Cadillac%2C%20MI%2049601&z=15&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
