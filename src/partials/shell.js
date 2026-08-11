@@ -20,7 +20,7 @@ function formatPrice(value) {
   return `$${Number(value).toFixed(2)}`
 }
 
-export { formatPrice }
+export { formatPrice, currentPath, isActive }
 
 export function renderShell(settings = {}) {
   const path = currentPath()

@@ -26,6 +26,17 @@ function bindForm() {
     event.preventDefault()
     const submitBtn = form.querySelector('[type="submit"]')
     const formData = new FormData(form)
+
+    // Honeypot: real users never fill this hidden field, bots usually do.
+    if (String(formData.get('website') || '').trim()) {
+      form.reset()
+      if (status) {
+        status.textContent = 'Thanks! Your message has been sent.'
+        status.className = 'mt-4 text-secondary text-sm'
+      }
+      return
+    }
+
     const payload = {
       name: String(formData.get('name') || '').trim(),
       email: String(formData.get('email') || '').trim(),

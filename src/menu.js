@@ -1,8 +1,7 @@
 import { fetchMenu } from './lib/pocketbase.js'
 import { formatPrice } from './partials/shell.js'
 
-const FEATURED_IMAGE =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCTEE4HsojwEsePPFzsGv-5km9x-H79dkMB4DGcrBlp5zfoe_1wbZt_D-FoB_JlYEcCbfzGL97EWJw6IUl8KGnovsmBm1DSolBxI6UY8okpNPq-mwAfK3wHD8-ZNh8zW1gtJnnWfcl7ZVQNZOyFySOl9EqnKXHn8jf1TpqPZD5RJlezK9h2uH2irVi2Wx9v4ELx9JilTjC-l9nz2_lDsYvL-tOQQdOzvSJs12APcZBahopewJYV431Flg'
+const FEATURED_IMAGE = '/images/butter-croissant.jpg'
 
 function itemRow(item) {
   const tags = (item.tags || [])
@@ -33,7 +32,7 @@ function featuredCard(item) {
       </div>
       <div class="relative z-10 flex flex-col md:flex-row gap-8 items-center">
         <div class="w-full md:w-1/3 aspect-square rounded-t-lg md:rounded-lg overflow-hidden relative shadow-sm">
-          <img class="w-full h-full object-cover" alt="${item.name}" src="${item.image || FEATURED_IMAGE}" />
+          <img class="w-full h-full object-cover" alt="${item.name}" src="${item.image || FEATURED_IMAGE}" width="600" height="600" loading="lazy" />
         </div>
         <div class="w-full md:w-2/3 text-center md:text-left">
           <h3 class="font-display text-headline-sm text-primary mb-2 italic">Morning Ritual</h3>

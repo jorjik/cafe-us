@@ -29,7 +29,8 @@ export async function fetchSettings() {
       facebook: record.facebook,
       order_url: record.order_url || '/menu.html',
     }
-  } catch {
+  } catch (err) {
+    console.warn('fetchSettings: falling back to seed data —', err.message)
     return { ...seed.settings }
   }
 }
@@ -65,7 +66,8 @@ export async function fetchMenu() {
     }))
 
     return { categories, items }
-  } catch {
+  } catch (err) {
+    console.warn('fetchMenu: falling back to seed data —', err.message)
     return {
       categories: seed.categories,
       items: seed.items,
