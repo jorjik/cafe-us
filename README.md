@@ -73,14 +73,10 @@ migration files and left the admin UI without `menu_*` collections. Migrations a
 
 ## Scripts
 
-- 
-pm run dev` — Vite dev server
-- 
-pm run build` — production build to `dist/`
-- 
-pm run preview` — preview `dist/`
-- 
-pm run seed` — upsert menu + settings into PocketBase
+- `npm run dev` — Vite dev server
+- `npm run build` — production build to `dist/`
+- `npm run preview` — preview `dist/`
+- `npm run seed` — upsert menu + settings into PocketBase
 
 ## Design reference
 
