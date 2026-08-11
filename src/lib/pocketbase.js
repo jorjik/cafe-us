@@ -1,6 +1,7 @@
 import seed from '../data/seed-menu.json'
 
-const PB_URL = (import.meta.env.VITE_POCKETBASE_URL || 'http://127.0.0.1:8090').replace(/\/$/, '')
+// Empty string = same-origin (nginx proxies /api and /_ to PocketBase)
+const PB_URL = (import.meta.env.VITE_POCKETBASE_URL ?? 'http://127.0.0.1:8090').replace(/\/$/, '')
 
 async function pbFetch(path) {
   const res = await fetch(`${PB_URL}/api/collections/${path}`, {

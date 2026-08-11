@@ -14,3 +14,17 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_POCKETBASE_URL: ""
+    container_name: cozy-cafe-web
+    restart: unless-stopped
+    depends_on:
+      pocketbase:
+        condition: service_healthy
+    ports:
+      - "8080:80"
