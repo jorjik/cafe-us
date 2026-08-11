@@ -32,6 +32,7 @@ npm run seed
 On container start PocketBase will:
 1. **Upsert** the superuser from `PB_ADMIN_EMAIL` / `PB_ADMIN_PASSWORD`
 2. **Auto-migrate** collections from migrations baked into the image
+3. **Seed** menu + site settings if empty (`PB_FORCE_SEED=1` to replace)
 
 Copy `.env.example` to `.env` and change credentials before any real deploy.
 In Coolify, set the same `PB_ADMIN_*` env vars on the application (runtime).
@@ -72,10 +73,14 @@ migration files and left the admin UI without `menu_*` collections. Migrations a
 
 ## Scripts
 
-- `npm run dev` — Vite dev server
-- `npm run build` — production build to `dist/`
-- `npm run preview` — preview `dist/`
-- `npm run seed` — upsert menu + settings into PocketBase
+- 
+pm run dev` — Vite dev server
+- 
+pm run build` — production build to `dist/`
+- 
+pm run preview` — preview `dist/`
+- 
+pm run seed` — upsert menu + settings into PocketBase
 
 ## Design reference
 

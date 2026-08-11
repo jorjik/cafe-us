@@ -27,6 +27,7 @@ loadEnv()
 const PB_URL = (process.env.VITE_POCKETBASE_URL || 'http://127.0.0.1:8090').replace(/\/$/, '')
 const EMAIL = process.env.PB_ADMIN_EMAIL || 'admin@cozycafe.local'
 const PASSWORD = process.env.PB_ADMIN_PASSWORD || 'changeme-admin-password'
+const FORCE = process.env.PB_FORCE_SEED === '1' || process.env.PB_FORCE_SEED === 'true'
 const seed = JSON.parse(readFileSync(resolve(root, 'src/data/seed-menu.json'), 'utf8'))
 
 async function pb(path, { method = 'GET', token, body } = {}) {
@@ -58,7 +59,7 @@ async function ensureSuperuser() {
     })
   } catch (err) {
     throw new Error(
-      `${err.message}\nCreate an admin first:\n  .\\pocketbase\\pocketbase.exe superuser upsert ${EMAIL} ${PASSWORD} --dir=./pocketbase/pb_data`,
+      `${err.message}\nCreate an admin first:\n  pocketbase superuser upsert ${EMAIL} ${PASSWORD} --dir=/pb_data`,
     )
   }
 }
@@ -74,6 +75,12 @@ async function main() {
   console.log(`Seeding PocketBase at ${PB_URL}`)
   const auth = await ensureSuperuser()
   const token = auth.token
+
+  const existing = await pb('/api/collections/menu_categories/records?perPage=1', { token })
+  if ((existing.items?.length || 0) > 0 && !FORCE) {
+    console.log('Seed skipped: menu data already present (set PB_FORCE_SEED=1 to replace)')
+    return
+  }
 
   await clearCollection(token, 'menu_items')
   await clearCollection(token, 'menu_categories')
@@ -115,7 +122,6 @@ async function main() {
 
 main().catch((err) => {
   console.error(err.message)
-  console.error('\nMake sure PocketBase is running: docker compose up -d')
-  console.error('Admin UI: http://127.0.0.1:8090/_/')
+  console.error('\nMake sure PocketBase is running and admin credentials are set.')
   process.exit(1)
 })

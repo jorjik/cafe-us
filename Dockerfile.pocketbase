@@ -1,15 +1,22 @@
 FROM ghcr.io/muchobien/pocketbase:0.28.4
 
-# Bake migrations into the image so Coolify persistent volumes cannot shadow an empty dir.
+# Node is used only for the one-shot seed script on boot.
+RUN apk add --no-cache nodejs
+
+# Bake migrations + seed payload into the image (not Coolify volumes).
 COPY pocketbase/pb_migrations /pb_migrations
 COPY scripts/pb-entrypoint.sh /usr/local/bin/pb-entrypoint.sh
+COPY scripts/seed.mjs /seed/scripts/seed.mjs
+COPY src/data/seed-menu.json /seed/src/data/seed-menu.json
 RUN chmod +x /usr/local/bin/pb-entrypoint.sh
 
 ENV PB_DIR=/pb_data \
-    PB_MIGRATIONS_DIR=/pb_migrations
+    PB_MIGRATIONS_DIR=/pb_migrations \
+    PB_SEED_ON_START=true \
+    VITE_POCKETBASE_URL=http://127.0.0.1:8090
 
 ENTRYPOINT ["/usr/local/bin/pb-entrypoint.sh"]
 EXPOSE 8090
 
-HEALTHCHECK --interval=10s --timeout=5s --retries=5 --start-period=20s \
+HEALTHCHECK --interval=10s --timeout=5s --retries=5 --start-period=30s \
   CMD wget -q --spider http://127.0.0.1:8090/api/health || exit 1

@@ -10,15 +10,17 @@ services:
     environment:
       PB_ADMIN_EMAIL: ${PB_ADMIN_EMAIL:-}
       PB_ADMIN_PASSWORD: ${PB_ADMIN_PASSWORD:-}
+      PB_SEED_ON_START: ${PB_SEED_ON_START:-true}
+      PB_FORCE_SEED: ${PB_FORCE_SEED:-}
     volumes:
-      # Persist DB only. Migrations live in the image (see Dockerfile.pocketbase).
+      # Persist DB only. Migrations + seed JSON live in the image.
       - ./pocketbase/pb_data:/pb_data
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8090/api/health"]
       interval: 10s
       timeout: 5s
       retries: 5
-      start_period: 20s
+      start_period: 40s
 
   web:
     build:
