@@ -1,20 +1,18 @@
 services:
   pocketbase:
-    image: ghcr.io/muchobien/pocketbase:0.28.4
+    build:
+      context: .
+      dockerfile: Dockerfile.pocketbase
     container_name: cozy-cafe-pocketbase
     restart: unless-stopped
-    # Image ENTRYPOINT already includes `serve ...`; override so we don't double it
-    entrypoint: ["/usr/local/bin/pocketbase"]
-    command:
-      - serve
-      - --http=0.0.0.0:8090
-      - --dir=/pb_data
-      - --migrationsDir=/pb_migrations
     ports:
       - "8090:8090"
+    environment:
+      PB_ADMIN_EMAIL: ${PB_ADMIN_EMAIL:-}
+      PB_ADMIN_PASSWORD: ${PB_ADMIN_PASSWORD:-}
     volumes:
+      # Persist DB only. Migrations live in the image (see Dockerfile.pocketbase).
       - ./pocketbase/pb_data:/pb_data
-      - ./pocketbase/pb_migrations:/pb_migrations
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8090/api/health"]
       interval: 10s
