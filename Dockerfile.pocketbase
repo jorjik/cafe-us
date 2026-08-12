@@ -1,4 +1,4 @@
-FROM ghcr.io/muchobien/pocketbase:0.28.4
+FROM ghcr.io/muchobien/pocketbase:0.39.10
 
 # Node is used only for the one-shot seed script on boot.
 RUN apk add --no-cache nodejs
